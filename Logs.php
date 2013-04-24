@@ -24,8 +24,7 @@
 class Logs
 {
     
-    //private $_url = 'http://api.logs.ws/';
-    private $_url = 'http://localhost/Logs.ws/api/';
+    private $_url = 'http://api.logs.ws/1.0/';
     
     public function __construct($apikey, $mode) {
         $this->apikey = $apikey;
