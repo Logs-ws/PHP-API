@@ -19,7 +19,7 @@
  * @copyright  Copyright (c) 2013 Logs.ws (http://logs.ws)
  * @version    Release:  1.0
  * @since      Class available since Release 1.0
- * @author Shouvik Chatterjee (contact@shouvik.net)
+ * @author Shouvik Chatterjee (shouvik@logs.ws)
  */
 class Logs
 {
