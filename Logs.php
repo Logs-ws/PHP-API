@@ -78,6 +78,8 @@ class Logs
             curl_setopt($ch, CURLOPT_POST,1);
             curl_setopt($ch, CURLOPT_POSTFIELDS,$curlData);
             curl_setopt($ch, CURLOPT_HEADER, 0);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);            
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); //Set curl to return the data instead of printing it to the browser.
             curl_setopt($ch, CURLOPT_URL, $this->_url);
             $data = curl_exec($ch);
