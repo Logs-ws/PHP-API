@@ -6,7 +6,7 @@
  *
  * @category   Logs.ws
  * @package    API Library
- * @copyright  Copyright (c) 2013 Logs.ws (http://logs.ws)
+ * @copyright  Copyright (c) 2013 Logs.ws (https://logs.ws)
  * @version    1.0
  * @since      File available since Release 1.0
  *
@@ -16,7 +16,7 @@
  *
  * @category   Logs.ws
  * @package    API Library
- * @copyright  Copyright (c) 2013 Logs.ws (http://logs.ws)
+ * @copyright  Copyright (c) 2013 Logs.ws (https://logs.ws)
  * @version    Release:  1.0
  * @since      Class available since Release 1.0
  * @author Shouvik Chatterjee (shouvik@logs.ws)
@@ -24,7 +24,7 @@
 class Logs
 {
     
-    private $_url = 'http://api.logs.ws/1.0/';
+    private $_url = 'https://logs.ws/api/1.0/';
     
     public function __construct($apikey, $mode) {
         $this->apikey = $apikey;
