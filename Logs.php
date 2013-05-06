@@ -26,9 +26,9 @@ class Logs
     
     private $_url = 'https://logs.ws/api/1.0/';
     
-    public function __construct($apikey, $mode) {
+    public function __construct($apikey, $format) {
         $this->apikey = $apikey;
-        $this->mode = $mode;
+        $this->format = $format;
     }
     
     /*
@@ -57,7 +57,7 @@ class Logs
         
         $data = array();        
         $data['apikey']= $this->apikey;
-        $data['format']= $this->mode;        
+        $data['format']= $this->format;        
         $data['type'] = $type;        
         $data['log'] = $log;        
         
