@@ -57,7 +57,7 @@ class Logs
         
         $data = array();        
         $data['apikey']= $this->apikey;
-        $data['mode']= $this->mode;        
+        $data['format']= $this->mode;        
         $data['type'] = $type;        
         $data['log'] = $log;        
         
