@@ -3,7 +3,7 @@
 
 This library can be used in your PHP script to send your application logs to the Logs.ws server.
 
-**(c) 2013 Logs.ws**
+**(c) 2013-2014 Logs.ws**
 
 <hr>
 
@@ -36,6 +36,6 @@ With the help of Logs object start sending your logs:
 <?php
   $log = 'Example log text...'; 
   $type = 'INFO'; //Optional. Possible values INFO, WARN, ERROR. Default is INFO.
-  $logs->sendRequest($log, $type); 
+  $logs->send($log, $type); 
 ?>
 ```
