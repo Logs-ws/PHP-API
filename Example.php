@@ -1,5 +1,5 @@
 <?php
-require 'Logs.php';
+require 'lib/Logs.php';
 
 $obj = new Logs('YOUR-API-KEY-HERE', 'json');
 

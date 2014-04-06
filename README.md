@@ -17,7 +17,7 @@ Download the PHP API Library “Logs.php” from
 Include the "Logs.php" file that you have downloaded.
 ```php
 <?php
-include 'path/to/library/Logs.php';
+include 'path/to/lib/Logs.php';
 ?>
 ```
 
