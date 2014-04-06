@@ -25,7 +25,7 @@ include 'path/to/lib/Logs.php';
 Initialize the Logs object with your Logs.ws API KEY and your prefered format (json/xml). API key can be found at <code>http://logs.ws/user-settings</code>
 ```php
 <?php
-$logs = new Logs('your-api-key', 'json');
+$Log = new Logs('your-api-key', 'json');
 ?>
 ```
 
@@ -34,8 +34,8 @@ $logs = new Logs('your-api-key', 'json');
 With the help of Logs object start sending your logs:
 ```php
 <?php
-  $log = 'Example log text...'; 
+  $logData = 'Example log text...'; 
   $type = 'INFO'; //Optional. Possible values INFO, WARN, ERROR. Default is INFO.
-  $logs->send($log, $type); 
+  $Log->Send($logData, $type); 
 ?>
 ```

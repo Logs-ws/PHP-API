@@ -1,11 +1,11 @@
 <?php
 require 'lib/Logs.php';
 
-$obj = new Logs('YOUR-API-KEY-HERE', 'json');
+$Log = new Logs('YOUR-API-KEY-HERE', 'json');
 
 // Log that you want to send to the logs.ws server
-$log ='Test log.'; 
+$logData ='Test log.'; 
 
 // Send the log to the logs.ws server/
-echo $obj->Send($log, 'INFO'); 
+echo $Log->Send($logData, 'INFO'); 
 ?>
