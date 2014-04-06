@@ -45,10 +45,6 @@ class Logs
     */
     public function Send($log='', $type='INFO')
     {
-        if (empty($log)) {
-            throw new Exception('Log message is empty. A log should at least be 1 char in length.');
-        }      
-
         // Check if CURL is enabled on the server.
         if( ! function_exists('curl_version')){
              throw new Exception('Curl is not installed on this server');
@@ -62,9 +58,9 @@ class Logs
             $type = 'INFO';
         }
         
-        if( strlen($log) < 1 ) {
-            return 'Nothing to send.';
-        }
+        if (strlen($log) < 1 ) {
+            throw new Exception('Log message is empty. A log should at least be 1 char in length.');
+        }   
         
         $data = array();        
         $data['apikey']= $this->apikey;
