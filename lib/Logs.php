@@ -87,7 +87,6 @@ class Logs
             curl_setopt($ch, CURLOPT_HEADER, 0);
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-            //Set curl to return the data instead of printing it to the browser.            
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
             curl_setopt($ch, CURLOPT_URL, self::API_URL);
             $data = curl_exec($ch);
