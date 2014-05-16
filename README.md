@@ -38,12 +38,14 @@ You can also set the value for _DEBUG_ to **true** if you want to display errors
 ```
 
 ## Step 4: ##
-With the completion of the above 3 steps, you are done setting up the library and its ready to use. You do not have to include the _Logs.php_ class file anywhere as it will be inclued automatically for the settings done in Step 2 above. To see it in action, open any php page inside your project and write a code that would generate an error. 
+With the completion of the above 3 steps, you are done setting up the library and its ready to use. You do not have to include the _Logs.php_ class file anywhere as it will be included automatically as per the settings done in Step 2 above. To see it in action, open any php page inside your project and write a code that would generate an error. 
 
 For example, let us see an example of generating a fatal error. Lets call a function that has not yet defined.
 
 ```php
-<?php TestFunc(); // Calling a non declared function. ?>
+<?php 
+	TestFunc(); // Calling a non declared function. 
+?>
 ```
 
 Once you execute the above script, it will silently (assuming _DEBUG_ is set to **false**) send the error log to your Logs.ws account. You can see the log from your account dashboard.
