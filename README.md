@@ -44,7 +44,7 @@ For example, let us see an example of generating a fatal error. Lets call a func
 
 ```php
 <?php 
-	TestFunc(); // Calling a non declared function. 
+	TestFunc(); 
 ?>
 ```
 
