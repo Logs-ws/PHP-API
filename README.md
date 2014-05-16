@@ -14,20 +14,20 @@ Download the PHP API Library “Logs.php” from
 <code>https://github.com/Logs-ws/PHP-API</code>
 
 ## Step 2: ##
-Open _php.ini_ and add the path of the Logs.php class file in the _auto_prepend_file_ directive.
+Open _php.ini_ and add the path of the _Logs.php_ class file in the _auto_prepend_file_ directive.
 Learn more about [auto_prepend_file](http://docs.php.net/manual/en/ini.core.php#ini.auto-prepend-file)
 ```php
 auto_prepend_file = "path/to/Logs.php"
 ```
 
-Alternatively, if you do not have access to _php.ini_, you can create .htaccess file on your project root and add the following line in it.
+Alternatively, if you do not have access to _php.ini_, you can create _.htaccess_ file on your project root and add the following line in it.
 ```php
 php_value  auto_prepend_file "path/to/Logs.php"
 ```
 
 
 ## Step 3: ##
-Open Logs.php class file and change the following setting with your Logs.ws API key. Your API key can be found at the Account Settings page.
+Open _Logs.php_ class file and change the following setting with your Logs.ws API key. Your API key can be found at the _Account Settings_ page.
 ```php
 <?php const API_KEY = 'YOUR-API-KEY'; ?>
 ```
@@ -38,7 +38,9 @@ You can also set the value for _DEBUG_ to **true** if you want to display errors
 ```
 
 ## Step 4: ##
-With the completion of the above 3 steps, you are done setting up the library and its ready to use. You do not have to include the _Logs.php_ class file anywhere as it will be inclued automatically for the settings done in Step 2 above. To see it in action, open any php page inside your project and write a code that would generate an error. For example, let us see an example of generating a fatal error. Lets call a function that has not yet defined.
+With the completion of the above 3 steps, you are done setting up the library and its ready to use. You do not have to include the _Logs.php_ class file anywhere as it will be inclued automatically for the settings done in Step 2 above. To see it in action, open any php page inside your project and write a code that would generate an error. 
+
+For example, let us see an example of generating a fatal error. Lets call a function that has not yet defined.
 
 ```php
 <?php TestFunc(); // Calling a non declared function. ?>
